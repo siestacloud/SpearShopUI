@@ -5,7 +5,7 @@
 
 
 <div align="center">
-<h3 align="center">SpearShopUI</h3>
+<h3 align="center">UI Hit shop</h3>
 
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -16,12 +16,12 @@
 
 ---
 
-<p align="center"> Шаблон фронта для интернет магазина
+<p align="center"> Фронт для интернет магазина
     <br> 
 </p>
 
 
-# UISpearShop
+# Hit Shop
 
 
 ## Table of Contents
@@ -30,7 +30,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 ## 😉 Check result <a name = "Check result"></a>
-Итоговая реализация проекта доступна по ссылке siestacloud.github.io/UI-SpearShop/
+Итоговая реализация проекта доступна по ссылке siestacloud.github.io/UI-HitShop/
 ## 🧐 About <a name = "about"></a>
 
 Проект выполнен в рамках технического задания реализации интернет магазина
@@ -41,8 +41,8 @@
 
 ###  Installing
 ```
-git clone  git@github.com:siestacloud/UI-SpearShop.git
-cd UI-SpearShop/
+git clone  git@github.com:siestacloud/UI-HitShop.git
+cd UI-HitShop/
 ```
 `npm`
 ```
