@@ -4,10 +4,14 @@
   // padding-bottom:  30px;
   grid-area: main;
 
+  display: grid;
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
 
 
-
-  @media (max-width: 867px) {
+  &__wrapper {
+    grid-area: 1/2;
+    height: 1000px;
   }
-}
 
+  @media (max-width: 867px) {}
+}

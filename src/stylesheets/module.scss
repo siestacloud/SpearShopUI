@@ -9,7 +9,9 @@
 @import "layout/module.scss";
 
 //* подключаю стили для компонентов
-// @import "../components/common/links/scss/module.scss";
+@import "../components/logo/scss/module.scss";
+@import "../components/burger/scss/module.scss";
+
 
 
 
