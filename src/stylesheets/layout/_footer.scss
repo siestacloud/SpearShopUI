@@ -1,0 +1,41 @@
+// <ПОДВАЛ САЙТА>
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
+  // background-color: rgb(123 2 147);
+  background: linear-gradient(178deg, rgb(11, 4, 45) 36%, rgb(1 56 99) 70%, rgb(2 147 137) 100%);
+
+
+  &__wrapper {
+    grid-area: 1/2;
+    // display: flex;
+    // align-items: center;
+    @include f(center, center, column);
+
+    // justify-content: space-between;
+  }
+
+
+  &__row {
+    width: 100%;
+    @include f(space-between, center, row);
+
+  }
+
+  &__col {
+    margin: 10px 0px;
+    @include f(flex-end, flex-end, column);
+    gap: 10px;
+
+    p {
+      margin-right: 6px;
+    }
+  }
+
+  @media (max-width: 867px) {}
+
+}
+
+// </ПОДВАЛ САЙТА>
