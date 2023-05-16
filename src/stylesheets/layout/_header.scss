@@ -1,5 +1,4 @@
 // <ШАПКА САЙТА>
-
 .header {
   z-index: 25;
   padding: 7px 0px;
@@ -8,7 +7,6 @@
   position: fixed;
   display: grid;
   grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
-
 
   &__wrapper {
     padding: 22px 11px;
@@ -20,12 +18,10 @@
     flex-wrap: wrap;
     transition: all .3s ease;
     border-radius: 10px;
+
     &.scrolled {
       padding: 11px 11px;
       background: $bg-box-dark-tr;
     }
   }
-
-
-
 }
