@@ -26,11 +26,11 @@
 
 ## Table of Contents
 
-- [Check result](https://weather.siestacloud.ru/)
+- [Check result](https://siestacloud.github.io/UI-HitShop/)
 - [About](#about)
 - [Getting Started](#getting_started)
 ## 😉 Check result <a name = "Check result"></a>
-Итоговая реализация проекта доступна по ссылке siestacloud.github.io/UI-HitShop/
+Итоговая реализация проекта доступна по [ссылке](https://siestacloud.github.io/UI-HitShop/) 
 ## 🧐 About <a name = "about"></a>
 
 Проект выполнен в рамках технического задания реализации интернет магазина
