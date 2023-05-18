@@ -1,3 +1,5 @@
+import bag from './img/bag.svg';
+
 import { useToggle } from "../../hooks/useToggle";
 
 export function BurgerMenu() {
@@ -10,9 +12,9 @@ export function BurgerMenu() {
       </button>
       {/* настроить контент по макету */}
       <div className={`burger__menu ${MenuState ? 'burger__menu-active' : ''}`}>
-        <p>menu 1</p>
-        <p>menu 2</p>
-        <p>menu 3</p>
+        <div className='burger__love'  ></div>
+        
+        <div className='burger__bag'  ></div>
       </div>
     </article>
   )
