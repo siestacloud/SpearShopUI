@@ -1,0 +1,36 @@
+.categories {
+  flex-basis: 20%;
+  padding: 20px 20px;
+
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__column {
+    height: 100%;
+    @include f(space-between, flex-start, column);
+    gap: 10px;
+  }
+
+  &__items {
+    color: $desc-grey;
+    flex-basis: 70%;
+  }
+
+  &__item {
+    font-size: 16px;
+    padding: 6px 0px;
+  }
+
+  &__row {
+    width: 100%;
+    @include f(space-between, center, row);
+    color: $desc-grey;
+
+    font-size: 12px;
+    padding: 6px 0px;
+  }
+}

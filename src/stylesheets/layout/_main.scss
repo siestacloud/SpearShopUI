@@ -1,16 +1,22 @@
 // <ОСНОВНОЙ БЛОК>
 
 .main {
-  // padding-bottom:  30px;
   grid-area: main;
-
+  
   display: grid;
-  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1340px) minmax(15px, 1fr);
 
 
   &__wrapper {
+    padding-top:  100px;
     grid-area: 1/2;
-    height: 1000px ;
+  }
+
+  &__row {
+    @include f(space-between, center, row);
+    flex-wrap: wrap;
+    padding-bottom:  25px;
+
   }
 
   @media (max-width: 867px) {}
