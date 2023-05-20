@@ -1,17 +1,18 @@
 import { SubMenu } from "../../common/menu/menu";
 import { News } from "../../common/news/news";
+import { Product } from "../../common/product/product";
 import { Trend } from "../../common/trend/trend";
 
 
 export function Category() {
   return (
     <>
-      <div className="product m-row">
-        <div className="m-column m-fb20">
+      <div className="category m-row">
+        <div className="m-fb20 m-column ">
           <SubMenu style="m-box" />
           <SubMenu style="m-box" />
         </div>
-        <News style="m-fb78 m-box" />
+        <Product style="m-box m-fb78 m-stretch" />
       </div>
       <Trend />
     </>
