@@ -7,20 +7,66 @@
   flex-wrap: wrap;
   transition: 0.4s ease-in-out;
   opacity: 1;
-  text-align: center;
-  &__item {
+  
+  &__item{
+    margin-left: 30px;
+    background-color: $bg-dark;
+    border-radius: 8px;
+    width: 250px;
+    text-align: start;
+    padding-bottom: 10px;
+    &-title{
+      padding: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 800;
+
+    }
+
+    &-category{
+      padding-left: 10px;
+      padding-bottom: 10px;
+
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $desc-grey;
+    }
+    &-row{
+      padding: 0px 10px 0px 10px;
+      @include f(space-between, center, row)
+    }
+    &-price{
+      color: #7f00ff;
+      font-weight: 800;
+      font-size: 23px;
+    }
+    &-sell{
+      text-decoration: line-through;
+      color: #434244;
+      font-weight: 800;
+      font-size: 18px;
+    }
+    
+    &-purchaset{
+      color: $desc-grey;
+      font-weight: 800;
+      font-size: 18px;
+    }
+  }
+  &__preview {
+    
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 210px;
-    min-height: 400px;
+    min-height: 500px;
 
   }
 
-  &__item::before {
+  &__preview::before {
     content: "";
     left:0px;
     background: linear-gradient(90.21deg, #e2b5d2 -5.91%, #f7d066 111.58%);
@@ -31,12 +77,12 @@
     transition: 0.4s ease-in-out;
   }
 
-  &__item:hover::before {
+  &__preview:hover::before {
     height: 100%;
 
   }
 
-  &__item:hover &__content {
+  &__preview:hover &__content {
     top: 50%;
     opacity: 1;
   }
@@ -70,7 +116,7 @@
   @media (max-width: 867px) {
     @include f(center, center, row);
     width: 100%;
-    &__item {
+    &__preview {
       width: 100%;
 
     }

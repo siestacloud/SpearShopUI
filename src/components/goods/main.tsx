@@ -1,4 +1,4 @@
-import { Categories } from "../categories/categories";
+import { Categories, CategoriesRow } from "../categories/categories";
 import { News } from "../news/news";
 import { Trend } from "../trend/trend";
 
@@ -10,6 +10,7 @@ function Main() {
           <Categories />
           <News />
         </div>
+        <CategoriesRow/>
         <Trend/>
       </div>
     </main>

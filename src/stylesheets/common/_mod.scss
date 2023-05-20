@@ -1,21 +1,26 @@
-.m-font-little{
+.m-font-little {
   font-size: 1.2em;
 }
 
-.m-font-medium{
+.m-font-medium {
   font-size: 1.7em;
   font-weight: 600;
 }
 
 
-.m-box{
+.m-box {
   background-color: #19171b;
   border-radius: 8px;
   // height: 46vh;
 }
 
-.m-trend{
+.m-trend {
   background-color: #19171b;
   border-radius: 8px;
   // height: 50vh;
+}
+
+.m-fl-center {
+  align-items: center;
+  justify-content: center;
 }
