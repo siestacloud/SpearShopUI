@@ -42,17 +42,21 @@
     border-radius: 8px;
     // flex-grow: 1;
     transition: all .2s ease-in-out;
-    &:hover{
-    flex-basis: 20%;
+
+    &:hover {
+      flex-basis: 20%;
 
     }
+
     text-align: center;
-    &:hover{
-      & > p{
+
+    &:hover {
+      &>p {
         color: $desc-light;
       }
     }
-    & > p{
+
+    &>p {
       transition: all .5s ease;
       margin: 7px 0px 7px 0px;
       font-size: 23px;
@@ -69,5 +73,23 @@
       // width: 200px;
 
     }
+  }
+
+  @media (max-width: 867px) {
+    &__row {
+      @include f(space-around, center, row);
+
+    }
+    &__element {
+      min-width: 100%;
+    }
+  }
+
+  @media (max-width: 367px) {
+    &__row {
+      // @include f(space-between, center, column);
+      align-items: stretch;
+    }
+
   }
 }

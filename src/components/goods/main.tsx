@@ -1,5 +1,6 @@
 import { Categories, CategoriesRow } from "../categories/categories";
 import { News } from "../news/news";
+import { Sale } from "../sale/sale";
 import { Trend } from "../trend/trend";
 
 function Main() {
@@ -11,6 +12,8 @@ function Main() {
           <News />
         </div>
         <CategoriesRow/>
+        <Trend/>
+        <Sale/>
         <Trend/>
       </div>
     </main>

@@ -1,6 +1,7 @@
 .btn {
   margin: 10px 0px 5px 5px;
-
+  position: relative;
+  z-index: 4;
   display: inline-block;
   padding: 1px 11px;
   background-color: #7f00ff;
@@ -18,13 +19,16 @@
   transition: background 200ms ease-in-out, transform 100ms ease-in-out;
 
   user-select: none; // текст на кнопке нельзя скопировать
+
   &--rounded {
     border-radius: 40px;
   }
-  &:hover{
-    background-color: #7100e2 ;
+
+  &:hover {
+    background-color: #7100e2;
   }
-  &:active{
+
+  &:active {
     transform: scale(.95);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.400);
   }

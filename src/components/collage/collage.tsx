@@ -27,8 +27,12 @@ export function Collage() {
       items: 3
     },
     mobile: {
-      breakpoint: { max: 900, min: 0 },
-      items: 2
+      breakpoint: { max: 900, min: 300 },
+      items: 1
+    },
+    mobileMini: {
+      breakpoint: { max: 300, min: 0 },
+      items: 1
     }
   };
 

@@ -15,32 +15,26 @@
 
   p {
     position: relative;
-
     padding: 10px 0px 5px 5px;
     font-size: 17px;
     font-weight: 700;
     z-index: 3;
-
     color: $desc-grey;
     text-transform: uppercase;
-
   }
 
   h2 {
     position: relative;
     z-index: 3;
-
     padding: 10px 0px 5px 5px;
     font-size: 47px;
     font-weight: 700;
-
     color: $desc-light;
     text-transform: uppercase;
   }
 
   &__desc {
     padding: 20px;
-    // flex-grow: 1;
   }
 
   &__img {
@@ -50,5 +44,19 @@
     right: 0px;
     bottom: 0px;
     z-index: 0;
+  }
+
+  @media (max-width: 867px) {
+    h1 {
+      font-size: 55px;
+
+    }
+  }
+
+  @media (max-width: 367px) {
+    h1 {
+      font-size: 35px;
+
+    }
   }
 }
