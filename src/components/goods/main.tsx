@@ -10,7 +10,6 @@ function Main() {
         <Routes>
           <Route path={`/*`} element={<General />} />
           <Route path={`/category/product/${12345}`} element={<Category/>} />
-
         </Routes>
       </div>
     </main>
