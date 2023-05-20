@@ -9,16 +9,16 @@
 @import "layout/module.scss";
 
 //* подключаю стили для компонентов
-@import "../components/logo/scss/module.scss";
-@import "../components/burger/scss/module.scss";
-@import "../components/search/scss/module.scss";
-@import "../components/news/scss/module.scss";
-@import "../components/categories/scss/module.scss";
-@import "../components/trend/scss/module.scss";
-@import "../components/btn/scss/module.scss";
-@import "../components/collage/scss/module.scss";
-@import "../components/sale/scss/module.scss";
-@import "../components/social/scss/module.scss";
+@import "../components/common/logo/scss/module.scss";
+@import "../components/common/burger/scss/module.scss";
+@import "../components/common/search/scss/module.scss";
+@import "../components/common/news/scss/module.scss";
+@import "../components/common/categories/scss/module.scss";
+@import "../components/common/trend/scss/module.scss";
+@import "../components/common/btn/scss/module.scss";
+@import "../components/common/collage/scss/module.scss";
+@import "../components/common/sale/scss/module.scss";
+@import "../components/common/social/scss/module.scss";
 
 
 @import "common/_mod.scss";

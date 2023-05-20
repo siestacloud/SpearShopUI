@@ -1,7 +1,7 @@
-import { Logo } from "../logo/logo";
+import { Logo } from "../common/logo/logo";
 import { useScroll } from "../../hooks/useScroll";
-import { BurgerMenu } from "../burger/burger";
-import { Search } from "../search/search";
+import { Search } from "../common/search/search";
+import { BurgerMenu } from "../common/burger/burger";
 
 
 function Header() {

@@ -1,5 +1,5 @@
-import { Logo } from "../logo/logo";
-import { Social } from "../social/social";
+import { Logo } from "../common/logo/logo";
+import { Social } from "../common/social/social";
 
 function Footer() {
 

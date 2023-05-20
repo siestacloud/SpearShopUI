@@ -1,7 +1,7 @@
-import { Categories, CategoriesRow } from "../categories/categories";
-import { News } from "../news/news";
-import { Sale } from "../sale/sale";
-import { Trend } from "../trend/trend";
+import { Categories, CategoriesRow } from "../common/categories/categories";
+import { News } from "../common/news/news";
+import { Sale } from "../common/sale/sale";
+import { Trend } from "../common/trend/trend";
 
 function Main() {
   return (
