@@ -1,5 +1,5 @@
 .menu {
-  
+
   flex-basis: 20%;
   align-self: stretch;
   padding: 20px 20px;
@@ -24,6 +24,10 @@
   &__item {
     font-size: 16px;
     padding: 6px 0px;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   &__row {
@@ -81,6 +85,7 @@
       @include f(space-around, center, row);
 
     }
+
     &__element {
       min-width: 100%;
     }
