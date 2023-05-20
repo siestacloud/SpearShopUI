@@ -1,7 +1,7 @@
 .news {
-  flex-basis: 78%;
   @include f(flex-start, flex-start, row);
   position: relative;
+  align-self: stretch;
 
   h1 {
     color: $bg-dark;

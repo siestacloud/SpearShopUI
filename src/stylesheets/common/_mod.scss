@@ -30,6 +30,26 @@
 .m-row {
   @include f(space-between, center, row);
   flex-wrap: wrap;
-  padding-bottom: 25px;
+}
 
+.m-column {
+  @include f(space-between, center, column);
+  gap: 20px;
+}
+
+.m-fb20{
+  flex-basis: 20%;
+}
+
+.m-fb78{
+  flex-basis: 78%;
+
+}
+
+.m-stretch{
+  align-self: stretch;
+}
+
+.m-h100{
+  height: 100%;
 }

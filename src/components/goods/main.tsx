@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { General } from "../pages/general/general";
-import { Product } from "../pages/product/product";
+import { Category } from "../pages/category/category";
 
 
 function Main() {
@@ -9,7 +9,7 @@ function Main() {
       <div className="main__wrapper">
         <Routes>
           <Route path={`/*`} element={<General />} />
-          <Route path={`/product/${12345}`} element={<Product/>} />
+          <Route path={`/category/product/${12345}`} element={<Category/>} />
 
         </Routes>
       </div>

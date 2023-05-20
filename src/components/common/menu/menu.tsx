@@ -4,9 +4,14 @@ import rus from "./img/rus.jpeg";
 import veng from "./img/veng.jpeg";
 import fran from "./img/fran.jpg";
 
-export function SubMenu() {
+
+interface props {
+  style: string
+}
+
+export function SubMenu({ style }: props) {
   return (
-    <div className="menu m-box">
+    <div className={`menu ${style}`}>
       <div className="menu__column">
         <h2>Категории</h2>
         <ul className="menu__items">
