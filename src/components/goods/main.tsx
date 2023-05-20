@@ -1,20 +1,17 @@
-import { Categories, CategoriesRow } from "../common/categories/categories";
-import { News } from "../common/news/news";
-import { Sale } from "../common/sale/sale";
-import { Trend } from "../common/trend/trend";
+import { Route, Routes } from "react-router-dom";
+import { General } from "../pages/general/general";
+import { Product } from "../pages/product/product";
+
 
 function Main() {
   return (
     <main className='main'>
       <div className="main__wrapper">
-        <div className="main__row">
-          <Categories />
-          <News />
-        </div>
-        <CategoriesRow/>
-        <Trend/>
-        <Sale/>
-        <Trend/>
+        <Routes>
+          <Route path={`/*`} element={<General />} />
+          <Route path={`/product/${12345}`} element={<Product/>} />
+
+        </Routes>
       </div>
     </main>
   );

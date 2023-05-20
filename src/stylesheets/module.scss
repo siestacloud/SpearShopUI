@@ -1,4 +1,3 @@
-
 //? <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 //* переиспользуемые стили
@@ -8,12 +7,16 @@
 //* базовая расстановка контента на странице
 @import "layout/module.scss";
 
+@import "../components/pages/general/scss/module.scss";
+@import "../components/pages/product/scss/module.scss";
+
 //* подключаю стили для компонентов
+
 @import "../components/common/logo/scss/module.scss";
 @import "../components/common/burger/scss/module.scss";
 @import "../components/common/search/scss/module.scss";
 @import "../components/common/news/scss/module.scss";
-@import "../components/common/categories/scss/module.scss";
+@import "../components/common/menu/scss/module.scss";
 @import "../components/common/trend/scss/module.scss";
 @import "../components/common/btn/scss/module.scss";
 @import "../components/common/collage/scss/module.scss";
