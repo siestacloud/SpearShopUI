@@ -1,4 +1,26 @@
 .product {
+  flex-basis: 78%;
+  align-self: stretch;
+
+  &__row {
+    height: 100%;
+    padding: 20px;
+    @include f(space-between, flex-start, row);
+    flex-wrap: wrap;
+
+    &-btns {
+      padding: 0px;
+      @include f(space-between, flex-start, row);
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    @include f(space-between, flex-start, column);
+    height: 100%;
+  }
+
+
   &__img {
     height: 100%;
     border-radius: 8px;
@@ -44,7 +66,8 @@
       background: linear-gradient(90.21deg, #e2b5d2 -5.91%, #f7d066 111.58%);
       color: #fff;
     }
-    &>span.m-green{
+
+    &>span.m-green {
       border-radius: 8px;
       padding: 2px 6px;
       background: linear-gradient(90.21deg, #72dfb7 -5.91%, #36a62a 111.58%);
@@ -53,7 +76,7 @@
   }
 
   &__desc {
-    padding-bottom: 20px;
+    height: 250px;
     font-style: italic;
     font-size: 18px;
     color: $desc-grey;

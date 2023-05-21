@@ -6,9 +6,9 @@ interface props {
   style: string
 }
 
-export function News({ style }: props) {
+export function News() {
   return (
-    <div className={`news ${style}`} >
+    <div className={`news m-box `} >
       <div className="news__desc">
         <h1>Большая скидка</h1>
         <p>Лучший выбор на 2023г</p>

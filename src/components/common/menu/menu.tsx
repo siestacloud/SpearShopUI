@@ -5,13 +5,13 @@ import veng from "./img/veng.jpeg";
 import fran from "./img/fran.jpg";
 
 
-interface props {
-  style: string
-}
+// interface props {
+//   style: string
+// }
 
-export function SubMenu({ style }: props) {
+export function SubMenu() {
   return (
-    <div className={`menu ${style}`}>
+    <div className={`menu m-box`}>
       <div className="menu__column">
         <h2>Категории</h2>
         <ul className="menu__items">
@@ -20,7 +20,6 @@ export function SubMenu({ style }: props) {
           <li className="menu__item">Русская кухня</li>
           <li className="menu__item">Венгерская кухня</li>
           <li className="menu__item">Французкая кухня</li>
-
         </ul>
         <div className="menu__row">
           <p>Помощь</p>
@@ -36,7 +35,7 @@ export function SubMenu({ style }: props) {
 export function RowMenu() {
   return (
     <div className="menu m-box">
-      <div className="menu__column m-fl-center">
+      <div className="menu__column ">
         <h2>Категории</h2>
         <div className="menu__row">
           <div className="menu__element">

@@ -8,8 +8,8 @@ export function General() {
   return (
     <>
       <div className="general m-row">
-        <SubMenu style="m-box m-fb20" />
-        <News style="m-box m-fb78 m-stretch" />
+        <SubMenu />
+        <News  />
       </div>
       <RowMenu />
       <Trend />

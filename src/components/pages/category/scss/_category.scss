@@ -1,4 +1,14 @@
-.category{
-  padding-bottom: 0px;
+.category {
+  &__row {
+    margin: 20px 0px;
+    @include f(space-between, flex-start, row);
+    flex-wrap: wrap;
+  }
+
+  &__submenu {
+    flex-basis: 20%;
+    // @include f(space-between, center, column);
+    // gap: 20px;
+  }
 
 }
