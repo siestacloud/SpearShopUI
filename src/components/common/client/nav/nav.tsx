@@ -8,7 +8,7 @@ export function Nav() {
 
 
   return (
-    <article className="nav" >
+    <article className="nav " >
       <div className="nav__row">
 
         {AppState.areaSectionList.map((areaSection, i) =>
@@ -21,7 +21,6 @@ export function Nav() {
             </button>
           </Link>
         )}
-
       </div>
 
     </article>

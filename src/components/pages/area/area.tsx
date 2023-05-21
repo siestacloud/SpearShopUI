@@ -1,5 +1,3 @@
-import { Route, Routes } from "react-router-dom";
-import bav from "./img/bav.jpg";
 import { useAppState } from "../../../hooks/appHook";
 import { ControlAreaSection } from "../../../models/stateApp";
 import { Nav } from "../../common/client/nav/nav";
@@ -10,15 +8,13 @@ import { Settings } from "../../common/client/settings/settings";
 export function Area({ uri }: ControlAreaSection) {
 
   return (
-    <div className="area m-box" >
-      <div className="area__row">
+    <div className="area " >
+      <div className="area__row m-box">
         <Nav />
-
+      </div>
         {uri === "/area/settings" ? <Settings /> : <></>}
         {uri === "/area/bucket" ? <Bucket /> : <></>}
         {uri === "/area/favorite" ? <Favorite /> : <></>}
-
-      </div>
     </div>
   );
 }
