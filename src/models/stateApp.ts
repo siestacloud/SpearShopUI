@@ -1,21 +1,23 @@
 
 
 export interface AppState {
-  btnList: controlBtn[]
+  areaSectionList: ControlAreaSection[]
 
 }
 
-interface controlBtn {
+export interface ControlAreaSection {
+  sectionName:string
   enable: boolean
   style: string
+  uri: string
 }
 
 
 export const DEF_APP_STATE: AppState = {
-  btnList: [
-    { enable: true, style: "border-mod-one" },
-    { enable: false, style: "border-mod-two" },
-    { enable: false, style: "border-mod-three" }
+  areaSectionList: [
+    { sectionName:"Настройки",uri: "/area/settings", enable: true, style: "border-mod-one" },
+    { sectionName:"Корзина",uri: "/area/bucket", enable: false, style: "border-mod-two" },
+    { sectionName:"Избранное",uri: "/area/favorite", enable: false, style: "border-mod-three" }
   ]
 }
 

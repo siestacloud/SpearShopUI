@@ -15,6 +15,7 @@ function Header() {
         <Logo logo="HitShop" />
         <Search></Search>
         <BurgerMenu/>
+
       </div>
     </header>
   );

@@ -10,6 +10,7 @@
 @import "../components/pages/general/scss/module.scss";
 @import "../components/pages/category/scss/module.scss";
 @import "../components/pages/auth/scss/module.scss";
+@import "../components/pages/area/scss/module.scss";
 
 
 //* подключаю стили для компонентов
@@ -31,6 +32,10 @@
 @import "../components/common/title/scss/module.scss";
 @import "../components/common/login/scss/module.scss";
 @import "../components/common/checkbox/scss/module.scss";
+@import "../components/common/client/bucket/scss/module.scss";
+@import "../components/common/client/favorite/scss/module.scss";
+@import "../components/common/client/settings/scss/module.scss";
+@import "../components/common/client/nav/scss/module.scss";
 
 
 

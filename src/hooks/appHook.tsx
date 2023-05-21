@@ -23,7 +23,7 @@ export const AppStateContextProvider = ({ children }: Props) => {
   const [AppState, setAppCustomState] = useState(DEF_APP_STATE)
   
   const Show = (i: number): void => {
-    AppState.btnList.map((btn, id) => {
+    AppState.areaSectionList.map((btn, id) => {
       i === id
         ?
         !btn.enable
