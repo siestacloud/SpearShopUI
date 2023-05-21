@@ -3,7 +3,7 @@ import bag from './img/bag.svg';
 import { useToggle } from "../../../hooks/useToggle";
 
 export function BurgerMenu() {
-  const [MenuState, setMenuState] = useToggle(true);
+  const [MenuState, setMenuState] = useToggle(false);
 
   return (
     <article className="burger">

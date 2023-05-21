@@ -83,5 +83,29 @@
 
   }
 
+  @media (max-width: 867px) {
+    &__row {
+      display: block;
+    }
+
+    &__img {
+      height: 200px;
+
+      &-min {
+        flex-basis: 25%;
+      }
+    }
+
+    &__imgs {
+      padding: 20px 0px;
+      @include f(flex-start, center, row);
+      gap: 5%;
+      flex-wrap: wrap;
+    }
+
+    &__desc {
+      height: auto                    ;
+    }
+  }
 
 }

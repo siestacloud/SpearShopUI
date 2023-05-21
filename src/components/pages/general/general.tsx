@@ -7,9 +7,9 @@ import { Trend } from "../../common/trend/trend";
 export function General() {
   return (
     <>
-      <div className="general m-row">
+      <div className="general__row">
         <SubMenu />
-        <News  />
+        <News />
       </div>
       <RowMenu />
       <Trend />

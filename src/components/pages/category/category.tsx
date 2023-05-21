@@ -15,8 +15,7 @@ export function Category() {
         </div>
         <Product />
       </div>
-      <Trend />
-      <div className="category m-row m-box ">
+      <div className="category__row  m-box ">
         <ProductMini />
         <ProductMini />
         <ProductMini />
@@ -34,7 +33,7 @@ export function Category() {
         <ProductMini />
         <ProductMini />
       </div>
-
+      <Trend />
     </>
   );
 }

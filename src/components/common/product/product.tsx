@@ -39,10 +39,7 @@ export const ProductMini = () => {
   return (
     <div className="pmini m-fb20">
       <div className="pmini__preview" style={{ backgroundImage: `url(${one})` }}  >
-        <div className="pmini__content">
-          <h4>Business Startup</h4>
-          <span>Design & Development</span>
-        </div>
+
       </div>
       <h2 className="pmini-title"> Баварская кухня </h2>
       <p className="pmini-category"> завтрак</p>

@@ -1,7 +1,6 @@
 .menu {
-  height: 30vh;
+  align-self: stretch;
   flex-basis: 20%;
-  // align-self: stretch;
   padding: 20px 20px;
 
   h2 {
@@ -82,7 +81,7 @@
 
   @media (max-width: 867px) {
     &__row {
-      @include f(space-around, center, row);
+      @include f(flex-start, center, row);
 
     }
 
