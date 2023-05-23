@@ -52,3 +52,34 @@ export const ProductMini = () => {
   )
 }
 
+
+
+export const ProductInBucket = () => {
+  return (
+    <div className={`pbucket m-box`} >
+      <div className="pbucket__row-close">
+      <h2 className="pbucket__name">Баварский завтрак</h2>
+      <h2 className="pbucket__name">X</h2>
+      
+      </div>
+      <div className="pbucket__row">
+        <div className="pbucket__img m-40" style={{ backgroundImage: `url(${mainImg})` }}>i</div>
+        <div className="pbucket__imgs m-15">
+          <div className="pbucket__img-min" style={{ backgroundImage: `url(${mainImg})` }}>q</div>
+          <div className="pbucket__img-min" style={{ backgroundImage: `url(${mainImg})` }}>q</div>
+        </div>
+        <div className="pbucket__column   m-45 ">
+          <p className="pbucket__info"><span>Цена: </span> <span className="m-yello">199р</span></p>
+          <p className="pbucket__info"><span>Категория: </span> <span className="m-yello">завтрак</span></p>
+          <p className="pbucket__info"><span>Рейтинг: </span> <span className="m-green">10/10</span></p>
+          <p className="pbucket__desc">Lorem ipsum dolor sit amet animi nesciunt minus consectetur adipisicing elit. Ea amet  animi nesciunt minus pariatur illo amet consectetur adipisicing  animi nesciunt minus.</p>
+          {/* <div className="pbucket__row-btns"> */}
+          {/* <Btn></Btn> */}
+          {/* <Btn></Btn> */}
+          {/* </div> */}
+        </div>
+      </div>
+    </div>
+  )
+}
+

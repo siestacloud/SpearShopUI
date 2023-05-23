@@ -1,12 +1,13 @@
 .nav {
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
 
   &__row {
-    @include f(space-around, baseline, row);
+    @include f(space-between, baseline, row);
   }
 
   &__btn {
+    width: 350px;
     overflow: hidden;
     flex: 1 1 25%;
     background: none;
@@ -55,12 +56,21 @@
     }
   }
 
+  @media (max-width: 1067px) {
+  
+    &__btn {
+      width: auto;
+    }
+  }
   @media (max-width: 867px) {
     margin-top: 20px;
-    &__txt {
-    font-size: 13px;
 
-    padding: 10px 15px;
+
+    &__txt {
+
+      font-size: 13px;
+
+      padding: 10px 15px;
 
     }
   }

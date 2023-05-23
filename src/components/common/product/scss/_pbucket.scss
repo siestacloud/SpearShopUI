@@ -1,12 +1,18 @@
-.product {
+.pbucket {
   flex-basis: 78%;
   align-self: stretch;
+  padding: 20px;
 
   &__row {
     height: 100%;
-    padding: 20px;
     @include f(space-between, flex-start, row);
     flex-wrap: wrap;
+
+    &-close {
+
+      @include f(space-between, center, row);
+    }
+
     &-btns {
       padding: 0px;
       @include f(space-between, flex-start, row);
@@ -75,7 +81,7 @@
   }
 
   &__desc {
-    height: 250px;
+    // height: 250px;
     font-style: italic;
     font-size: 18px;
     color: $desc-grey;
@@ -85,6 +91,15 @@
   @media (max-width: 867px) {
     &__row {
       display: block;
+
+      &-close {
+
+        @include f(space-between, center, row);
+      }
+    }
+
+    &__column {
+      margin-top: 20px;
     }
 
     &__img {
@@ -96,14 +111,11 @@
     }
 
     &__imgs {
-      padding: 20px 0px;
-      @include f(flex-start, center, row);
-      gap: 5%;
-      flex-wrap: wrap;
+      display: none;
     }
 
     &__desc {
-      height: auto                    ;
+      height: auto;
     }
   }
 

@@ -1,3 +1,36 @@
-.bucket{
-  
+.bucket {
+  &__row {
+    margin-top: 20px;
+    @include f(space-between, center, column);
+    gap: 20px;
+  }
+
+  &__box {
+    @include f(space-between, center, column);
+    margin: 20px 0px;
+
+  }
+
+  &__btn {
+    margin: 20px;
+    align-self: stretch;
+    flex-basis: 50%;
+    color: #fff;
+    padding: 17px 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 21px;
+    border-radius: 5px;
+    background-color: #1f1d22;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+      background-color: #558e87;
+    }
+    &-exit:hover {
+      background-color: #8e5558;
+
+    }
+  }
 }
