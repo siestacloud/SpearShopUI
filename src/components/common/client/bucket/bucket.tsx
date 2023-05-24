@@ -1,3 +1,4 @@
+import { Btn } from "../../btn/btn";
 import { ProductInBucket } from "../../product/product";
 import { Title } from "../../title/title";
 
@@ -14,14 +15,10 @@ export function Bucket() {
         <ProductInBucket></ProductInBucket>
         <ProductInBucket></ProductInBucket>
         <ProductInBucket></ProductInBucket>
-
       </div>
       <div className="bucket__box m-box">
-
-      <button type="submit" className="bucket__btn ">Оформить заказ</button>
+        <Btn style="btn-100 btn-p" content="Оформить заказ" />
       </div>
-
-      {/* <div className="buck"></div> */}
     </div>
   );
 }

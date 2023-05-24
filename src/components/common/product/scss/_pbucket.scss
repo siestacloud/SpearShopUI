@@ -9,14 +9,17 @@
     flex-wrap: wrap;
 
     &-close {
-
       @include f(space-between, center, row);
+    padding-bottom: 20px;
+
     }
 
     &-btns {
+      margin-top: 20px;
       padding: 0px;
-      @include f(space-between, flex-start, row);
+      @include f(space-between, center, row);
       flex-wrap: wrap;
+      gap: 10px;
     }
   }
 
@@ -52,7 +55,6 @@
   &__name {
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 20px;
 
   }
 
@@ -78,6 +80,13 @@
       background: linear-gradient(90.21deg, #72dfb7 -5.91%, #36a62a 111.58%);
       color: #fff;
     }
+  }
+
+  &__counter {
+    // padding-bottom: 20px;
+    font-size: 20px;
+    color: $desc-grey;
+
   }
 
   &__desc {

@@ -4,6 +4,7 @@ import { Nav } from "../../common/client/nav/nav";
 import { Bucket } from "../../common/client/bucket/bucket";
 import { Favorite } from "../../common/client/favorite/favorite";
 import { Settings } from "../../common/client/settings/settings";
+import { RowMenu } from "../../common/menu/menu";
 
 export function Area({ uri }: ControlAreaSection) {
 
@@ -15,6 +16,8 @@ export function Area({ uri }: ControlAreaSection) {
         {uri === "/area/settings" ? <Settings /> : <></>}
         {uri === "/area/bucket" ? <Bucket /> : <></>}
         {uri === "/area/favorite" ? <Favorite /> : <></>}
+        <RowMenu />
+    
     </div>
   );
 }

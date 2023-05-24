@@ -44,21 +44,7 @@
     }
   }
 
-  &__btn {
-    color: #fff;
-    padding: 25px 20px;
-    font-size: 1.2em;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 21px;
-    border-radius: 5px;
-    background-color: $bg-dark;
-    transition: background-color 0.2s ease-out;
 
-    &:hover {
-      background-color: #558e87;
-    }
-  }
 
   &__row-links {
     margin: 20px 0px;

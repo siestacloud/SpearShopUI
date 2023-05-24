@@ -1,6 +1,10 @@
-import { Btn } from "../btn/btn";
+import { Btn, BtnSvg } from "../btn/btn";
 import mainImg from "./img/1.jpg";
 import one from "./img/1.jpg";
+import minus from './img/minus.svg';
+import plus from './img/plus.svg';
+import close from './img/close.svg';
+
 
 
 
@@ -23,8 +27,8 @@ export function Product() {
           <p className="product__info"><span>Рейтинг: </span> <span className="m-green">10/10</span></p>
           <p className="product__desc">Lorem ipsum dolor sit amet   animi nesciunt minus consectetur adipisicing elit. Ea amet  animi nesciunt minus pariatur illo amet consectetur adipisicing  animi nesciunt minus.</p>
           <div className="product__row-btns">
-            <Btn></Btn>
-            <Btn></Btn>
+            <Btn style="btn-showmore" content="в корзину" />
+            <Btn style="btn-showmore" content="в избранное" />
           </div>
         </div>
       </div>
@@ -58,9 +62,9 @@ export const ProductInBucket = () => {
   return (
     <div className={`pbucket m-box`} >
       <div className="pbucket__row-close">
-      <h2 className="pbucket__name">Баварский завтрак</h2>
-      <h2 className="pbucket__name">X</h2>
-      
+        <h2 className="pbucket__name">Баварский завтрак</h2>
+        <BtnSvg f={()=>{}} svg={close} />
+
       </div>
       <div className="pbucket__row">
         <div className="pbucket__img m-40" style={{ backgroundImage: `url(${mainImg})` }}>i</div>
@@ -73,10 +77,11 @@ export const ProductInBucket = () => {
           <p className="pbucket__info"><span>Категория: </span> <span className="m-yello">завтрак</span></p>
           <p className="pbucket__info"><span>Рейтинг: </span> <span className="m-green">10/10</span></p>
           <p className="pbucket__desc">Lorem ipsum dolor sit amet animi nesciunt minus consectetur adipisicing elit. Ea amet  animi nesciunt minus pariatur illo amet consectetur adipisicing  animi nesciunt minus.</p>
-          {/* <div className="pbucket__row-btns"> */}
-          {/* <Btn></Btn> */}
-          {/* <Btn></Btn> */}
-          {/* </div> */}
+          <div className="pbucket__row-btns">
+            <BtnSvg f={() => { }} svg={minus} />
+            <p className="pbucket__counter">0</p>
+            <BtnSvg f={() => { }} svg={plus} />
+          </div>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import client from './img/client.svg';
 import { useToggle } from "../../../hooks/useToggle";
 import { Link } from 'react-router-dom';
 import { useAppState } from '../../../hooks/appHook';
+import { BtnSvg } from '../btn/btn';
 
 export function BurgerMenu() {
   const [MenuState, setMenuState] = useToggle(false);
@@ -17,15 +18,14 @@ export function BurgerMenu() {
       <button className="burger__btn" onClick={setMenuState}>
         <span></span>
       </button>
-      {/* настроить контент по макету */}
       <div className={`burger__menu ${MenuState ? 'burger__menu-active' : ''}`}>
-        <Link to={`/`}><div style={{ backgroundImage: `url(${general})` }} className='burger__img'  ></div></Link>
-        <Link to={`/login`}><div style={{ backgroundImage: `url(${login})` }} className='burger__img'  ></div></Link>
-        <Link to={`/area/settings`}><button onClick={() => Show(0)} style={{ backgroundImage: `url(${client})` }} className='burger__img'  ></button></Link>
-        <Link to={`/area/bucket`}><button onClick={() => Show(1)} style={{ backgroundImage: `url(${bag})` }} className='burger__img'  ></button></Link>
-        <Link to={`/area/favorite`}><button onClick={() => Show(2)} style={{ backgroundImage: `url(${love})` }} className='burger__img'  ></button></Link>
-
-
+        {/* <Link to={`/`}><div style={{ backgroundImage: `url(${general})` }} className='burger__img'  ></div></Link> */}
+        {/* <Link to={`/login`}><div style={{ backgroundImage: `url(${login})` }} className='burger__img'  ></div></Link> */}
+        <Link to={`/`}><BtnSvg f={() => { }} svg={general} /></Link>
+        <Link to={`/login`}><BtnSvg f={() => { }} svg={login} /></Link>
+        <Link to={`/area/settings`}><BtnSvg f={() => { Show(0) }} svg={client} /></Link>
+        <Link to={`/area/bucket`}><BtnSvg f={() => { Show(1) }} svg={bag} /></Link>
+        <Link to={`/area/favorite`}><BtnSvg f={() => { Show(2) }} svg={love} /></Link>
       </div>
     </article>
   )
